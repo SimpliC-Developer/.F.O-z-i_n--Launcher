@@ -4,7 +4,7 @@
 
 ## •/]> What's SimpliC?
 
-So you wanna know what's simplic? Well it's not somethings grand like a big brand or anything hehe cough*. Just think of it as some thing like the name of a website or just a project's parent folder. But why a name?. Convenience i guess. I think it will be much more convenient for me to release my projects under one name rather then releasing them under my **aline** like sounding name ( chuckles* ). I hope it makes things a bit clear.
+So you wanna know what's simplic? Well it's not somethings grand like a big brand or anything hehe cough*. Just think of it as some thing like the name of a website or just a project's parent folder. But why a name?. Convenience i guess. I think it will be much more convenient for me to release my projects under one name rather then releasing them under my **alien** like sounding name ( chuckles* ). I hope it makes things a bit clear.
 
 ## •/]> About the developer...( ∆×••⟨[]⟩ )
 
