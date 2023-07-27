@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
           package="simplified.creative.codes.nest"
-          android:versionCode="1"
+          android:versionCode="2"
           android:versionName="TheNest">
 
     <uses-sdk android:minSdkVersion="21"
-            android:targetSdkVersion="30" />
+            android:targetSdkVersion="31" />
 
     <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <uses-permission android:name = "android.permission.REQUEST_DELETE_PACKAGES"/>
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -38,7 +37,8 @@
                   android:stateNotNeeded="true"
                   android:taskAffinity=""
                   android:excludeFromRecents="true"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>

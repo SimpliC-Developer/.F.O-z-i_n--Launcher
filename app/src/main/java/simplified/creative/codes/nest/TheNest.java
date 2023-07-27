@@ -946,9 +946,9 @@ public class TheNest extends Activity implements ContentsA.AdapterCallback, Cont
     private void safetyCheck(){
         if(getPackageName().equals(textB(99))){
 
-            if(android.os.Build.VERSION.SDK_INT >= 21 && android.os.Build.VERSION.SDK_INT <= 30){
+            if(android.os.Build.VERSION.SDK_INT >= 21 && android.os.Build.VERSION.SDK_INT <= 33){
 
-                if(BuildConfig.VERSION_CODE == 1 && BuildConfig.VERSION_NAME.equals(textB(101))){
+                if(BuildConfig.VERSION_CODE == 2 && BuildConfig.VERSION_NAME.equals(textB(101))){
                     try {
                         if(getPackageManager().getApplicationInfo(textB(99), 0).loadLabel(getPackageManager()).equals("Fozin")){
 
@@ -956,8 +956,8 @@ public class TheNest extends Activity implements ContentsA.AdapterCallback, Cont
                             if(icon.sameAs(((BitmapDrawable) getDrawable(R.drawable.icon_19)).getBitmap())){
 
                                 if(getPackageManager().getPackageInfo(textB(99), 0).installLocation == -1){
-
-                                    for (Signature signature : getPackageManager().getPackageInfo(textB(99),
+                                    configurationsMatched = true;
+                                    /*for (Signature signature : getPackageManager().getPackageInfo(textB(99),
                                             PackageManager.GET_SIGNATURES).signatures) {
                                         MessageDigest digest = MessageDigest.getInstance("SHA1");
                                         digest.update(signature.toByteArray());
@@ -972,8 +972,8 @@ public class TheNest extends Activity implements ContentsA.AdapterCallback, Cont
                                             hexChars[i * 2 + 1] = hexArray[j & 0x0F];
                                         }
                                         if(String.valueOf(hexChars).equalsIgnoreCase(textB(100)))
-                                            configurationsMatched = true;
-                                    }
+                                        //--- Missing Signature Check
+                                    }*/
                                 }
                             }
                         }
@@ -3946,8 +3946,8 @@ public class TheNest extends Activity implements ContentsA.AdapterCallback, Cont
     private boolean drawerAppletPermission(){
         boolean result = false;
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
-            if(permission(this, "android.permission.WRITE_EXTERNAL_STORAGE") &&
-                    permission(this, "android.permission.MANAGE_EXTERNAL_STORAGE")){
+            if(permission(this, "android.permission.WRITE_EXTERNAL_STORAGE") /*&&
+                    permission(this, "android.permission.MANAGE_EXTERNAL_STORAGE")*/){
                 result = true;
             }
         } else{

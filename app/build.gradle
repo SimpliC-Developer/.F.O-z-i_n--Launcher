@@ -8,16 +8,17 @@ android {
         applicationId "simplified.creative.codes.nest"
         compileSdk 30
         minSdk 21
-        targetSdk 30
-        versionCode 1
-        versionName "0.0.F.S"
+        targetSdk 33
+        versionCode 2
+        versionName "0.1.F.S"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            signingConfig signingConfigs.release
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
